@@ -1,0 +1,10 @@
+<!DOCTYPE RCC><RCC version="1.0">
+ <qresource>
+  <file>images/qt-logo.png</file>
+  <file>images/connect.png</file>
+  <file>images/disconnect.png</file>
+  <file>images/settings.png</file>
+  <file>images/clear.png</file>
+  <file>images/application-exit.png</file>
+ </qresource>
+ </RCC>
