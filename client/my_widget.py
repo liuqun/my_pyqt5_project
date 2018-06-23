@@ -34,11 +34,13 @@ class MyWidget(QWidget, Ui_MyWidget):
         self.textEdit.moveCursor(QTextCursor.End)
         self.textEdit.insertPlainText(message)
 
-    def connect(self):
+    def connect(self, remote_ip_addr: str='127.0.0.1', remote_port: int=9999) -> None:
         if self.isConnectedToServer:
             return
 
-        self.sock.connectToHost(self.remote_ip_addr, self.remote_port)
+        self.remote_ip_addr = remote_ip_addr
+        self.remote_port = remote_port
+        self.sock.connectToHost(remote_ip_addr, remote_port)
 
         if not self.sock.waitForConnected(2500):
             msg = self.sock.errorString()
