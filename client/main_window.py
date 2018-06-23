@@ -60,7 +60,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def show_settings_dialog(self):
         sever_address, port = self.getCurrentSettings()
-        all_settings, ok = SettingsDialog.getAllSettings(sever_address, port)
+        all_settings, ok = SettingsDialog.getAllSettings(sever_address, port, self)
         if ok:
             sever_address = all_settings['sever_address']
             port = all_settings['port']
