@@ -56,8 +56,6 @@
    </item>
   </layout>
  </widget>
- <resources>
-  <include location="client_app.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
