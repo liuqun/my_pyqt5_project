@@ -24,7 +24,7 @@ class MyWidget(QWidget, Ui_MyWidget):
         self.setupQtSignalConnections()
 
     def setupQtSignalConnections(self):
-        self.pushButton.released.connect(self.push_button_event)
+        self.pushButton.clicked.connect(self.push_button_event)
         self.sock.connected.connect(self.on_socket_connected)
         self.sock.disconnected.connect(self.on_socket_disconnected)
         self.sock.readyRead.connect(self.on_socket_receive)
