@@ -1,5 +1,5 @@
 from player import MainWindow
-from client_app_rc import qInitResources, qCleanupResources
+from player_app_rc import qInitResources, qCleanupResources
 from PyQt5.QtWidgets import QApplication
 import sys
 

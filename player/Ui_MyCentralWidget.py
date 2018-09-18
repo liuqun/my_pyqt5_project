@@ -64,4 +64,4 @@ class Ui_MyCentralWidget(object):
         self.label_2.setText(_translate("MyCentralWidget", "TextLabel"))
 
 from PyQt5.QtMultimediaWidgets import QVideoWidget
-import client_app_rc
+import player_app_rc

@@ -107,7 +107,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../client_app.qrc"/>
+  <include location="../player_app.qrc"/>
  </resources>
  <connections/>
 </ui>
