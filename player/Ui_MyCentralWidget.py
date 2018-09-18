@@ -23,6 +23,7 @@ class Ui_MyCentralWidget(object):
         self.hBox.setObjectName("hBox")
         self.pushButton = QtWidgets.QToolButton(MyCentralWidget)
         self.pushButton.setEnabled(False)
+        self.pushButton.setStyleSheet("")
         self.pushButton.setObjectName("pushButton")
         self.hBox.addWidget(self.pushButton)
         self.pauseButton = QtWidgets.QToolButton(MyCentralWidget)
@@ -35,9 +36,19 @@ class Ui_MyCentralWidget(object):
         self.hBox.addWidget(self.horizontalSlider)
         self.vBox.addLayout(self.hBox)
         self.label = QtWidgets.QLabel(MyCentralWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
         self.label.setObjectName("label")
         self.vBox.addWidget(self.label)
         self.label_2 = QtWidgets.QLabel(MyCentralWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_2.sizePolicy().hasHeightForWidth())
+        self.label_2.setSizePolicy(sizePolicy)
         self.label_2.setObjectName("label_2")
         self.vBox.addWidget(self.label_2)
 
@@ -53,3 +64,4 @@ class Ui_MyCentralWidget(object):
         self.label_2.setText(_translate("MyCentralWidget", "TextLabel"))
 
 from PyQt5.QtMultimediaWidgets import QVideoWidget
+import client_app_rc
